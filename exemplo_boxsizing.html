@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Sizing</title>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    .caixa1, .caixa2 {
+      width: 300px;
+      text-align: justify;
+      background-color: #CCC;
+      border: 1px solid black;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    
+    .caixa1 {
+      border: 5px solid black;
+      padding-left: 50px;
+      padding-right: 50px;
+      box-sizing: border-box;
+    }
+
+    .caixa2 {
+      box-sizing: border-box;
+    }
+
+    .rodape {
+      margin-top: 16px;
+      background-color: aliceblue;
+      padding: 12px;
+      border: 1px solid #EEE;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- article>p.caixa*2+footer.rodape -->
+  <article>
+    <p class="caixa1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsum ad temporibus, incidunt accusamus commodi sed cupiditate placeat quam est?
+    </p>
+    <p class="caixa2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugiat magnam dignissimos atque? Qui, doloribus suscipit? Magni at ullam voluptate!
+    </p>
+    <footer class="rodape">
+      Volte sempre
+    </footer>
+  </article>
+  
+</body>
+</html>
